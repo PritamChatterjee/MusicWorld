@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Events</title>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ 
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<link href="css/font-awesome.css" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+
+<script src="js/jquery-1.10.2.min.js"></script>
+
+</head> 
+   
+ <body class="sticky-header left-side-collapsed"  onload="initMap()">
+    <section>
+     
+		<div class="left-side sticky-left-side">
+
+		  <div class="logo">
+				<h1><a href="home.html">Music<span>World</span></a></h1>
+		  </div>
+			<div class="logo-icon text-center">
+				<a href="home.html">M </a>
+			</div>
+
+			<div class="left-side-inner">
+
+					<ul class="nav nav-pills nav-stacked custom-nav">
+						<li><a href="explorer.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+					<li><a href="albums.html"><i class="lnr lnr-users"></i> <span>Artists/ albums</span></a></li> 
+						<li><a href="genres.html"><i class="lnr lnr-music-note"></i> <span>Genres</span></a></li>
+                        <li><a href="events.html"><i class="lnr lnr-book"></i><span>Events</span></a></li>
+                        <li><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+							
+								 </li>
+							</ul>
+						</li>     
+					</ul>
+				
+			</div>
+		</div>
+	
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="sign-grids">
+								<div class="sign">
+									<div class="sign-left">
+										<ul>
+											<li><a class="fb" href="https://www.facebook.com"><i></i>Sign in with Facebook</a></li>
+											<li><a class="goog" href="https://accounts.google.com/login"><i></i>Sign in with Google</a></li>
+											<li><a class="linkin" href="https://twitter.com"><i></i>Sign in with Twitter</a></li>
+										</ul>
+									</div>
+									<div class="sign-right">
+										<form action="#" method="post">
+
+											<h3>Create your account </h3>
+										  <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+										  <input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required>
+										  <input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required>	
+										  <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>	
+											
+											<input type="submit" value="CREATE ACCOUNT" >
+										</form>
+									</div>
+									<div class="clearfix"></div>								
+								</div>
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		<div class="main-content">
+			
+			<div class="header-section">
+			
+			<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+			
+				<div class="menu-right">
+					<div class="profile_details">		
+						  <div class="col-md-4 serch-part">
+								<div id="sb-search" class="sb-search">
+									<form action="#" method="post">
+										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
+										<input class="sb-search-submit" type="submit" value="">
+										<span class="sb-icon-search"> </span>
+									</form>
+								</div>
+							</div>
+							 
+									<script src="js/classie.js"></script>
+									<script src="js/uisearch.js"></script>
+										<script>
+											new UISearch( document.getElementById( 'sb-search' ) );
+										</script>
+									
+											  <div class="col-md-4 player">
+													<div class="audio-player">
+														<audio id="audio-player"  controls="controls">
+														<source src="media/Blue Browne.ogg" type="audio/ogg"></source>
+																<source src="media/Blue Browne.mp3" type="audio/mpeg"></source>
+																<source src="media/Georgia.ogg" type="audio/ogg"></source>
+																<source src="media/Georgia.mp3" type="audio/mpeg"></source></audio>
+														</div>
+												
+												<script type="text/javascript">
+													$(function(){
+													  $('#audio-player').mediaelementplayer({
+														alwaysShowControls: true,
+														features: ['playpause','progress','volume'],
+														audioVolume: 'horizontal',
+														iPadUseNativeControls: true,
+														iPhoneUseNativeControls: true,
+														AndroidUseNativeControls: true
+													});
+												 });
+												</script>
+												
+													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
+													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+												
+												<ul class="next-top">
+													<li><a class="ar" href="#"> <img src="images/arrow.png" alt=""/></a></li>
+													<li><a class="ar2" href="#"><img src="images/arrow2.png" alt=""/></i></a></li>
+														
+											 </ul>	
+											</div>
+											<div class="col-md-4 login-pop">
+												<div id="loginpop"><a href="#" id="loginButton"><span>Login <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-sign-in"></i></a>
+														<div id="loginBox">                
+															<form action="#" method="post" id="loginForm">
+																	<fieldset id="body">
+																		<fieldset>
+																			  <label for="email">Email Address</label>
+																			  <input type="text" name="email" id="email">
+																		</fieldset>
+																		<fieldset>
+																				<label for="password">Password</label>
+																				<input type="password" name="password" id="password">
+																		 </fieldset>
+																		<input type="submit" id="login" value="Sign in">
+																		<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+																	</fieldset>
+																<span><a href="#">Forgot your password?</a></span>
+														 </form>
+													</div>
+												</div>
+
+											</div>
+										<div class="clearfix"> </div>
+								</div>
+							
+						</div>
+					<div class="clearfix"></div>
+				</div>
+				
+							<div id="page-wrapper">
+								<div class="inner-content">
+									
+										<div class="tittle-head">
+											<h3 class="tittle">Events</h3>
+											<div class="clearfix"> </div>
+										</div>
+										
+										<div class="music-left">
+											<div class="post-media">
+												  <a href="events.html"><img src="images/e1.png" class="img-responsive" alt="" /></a>
+												  <div class="event-text">
+														<a href="events.html"><h3 class="h-t"> Drake - Centre Bell
+1260 De La Gauchetiere Street, Montreal, Quebec.</h3></a>
+												      <div class="entry-meta">
+															<h6 class="events"><i class="fa fa-clock-o"></i> Oct 07, 2016</h6>
+															<div class="icons">
+																<a href="#"><i class="fa fa-user"></i> Admin</a>
+																<a href="#"><i class="fa fa-comments-o"></i> 13k</a>
+																<a href="#"><i class="fa fa-thumbs-o-up"></i> 200k</a>
+																<a href="#"><i class="fa fa-thumbs-o-down"></i>  45</a>
+															</div>
+																<div class="clearfix"></div>
+															<p>Drake & Future will be performing at the Centre Bell at 1260 De La Gauchetiere Street, Montreal, Quebec. Next performance is on October 07, 2016. Doors typically open two hours before showtime - subject to change so please clarify before heading to the venue.</p>
+													  </div>
+												  </div>
+											</div>
+											<div class="post-media second">
+												  <a href="events.html"><img src="images/e2.jpg" class="img-responsive" alt="" /></a>
+												  <div class="event-text">
+														<a href="events.html"><h3 class="h-t">Beyonce - The Formation World Tour
+Nissan Stadium - Nashville, Nashville, TN</h3></a>
+												      <div class="entry-meta">
+															<h6 class="event"><i class="fa fa-clock-o"></i> Oct 02, 2016</h6>
+															<div class="icons">
+																<a href="#"><i class="fa fa-user"></i> Admin</a>
+																<a href="#"><i class="fa fa-comments-o"></i> 50k</a>
+																<a href="#"><i class="fa fa-thumbs-o-up"></i> 400k</a>
+																<a href="#"><i class="fa fa-thumbs-o-down"></i>  18</a>
+															</div>
+																<div class="clearfix"></div>
+															<p>Beyonce - The Formation World Tour will be performing at the Nissan Stadium - Nashville at One Titans Way, Nashville, Tennessee. Next performance is on October 02, 2016. Doors typically open two hours before showtime - subject to change so please clarify before heading to the venue. </p>
+													  </div>
+												  </div>
+											</div>
+											<div class="post-media">
+												  <a href="events.html"><img src="images/e3.jpg" class="img-responsive" alt="" /></a>
+												  <div class="event-text">
+														<a href="events.html"><h3 class="h-t"> Adele - Verizon Center - DC
+601 F Streets NW, Washington, District Of Columbia.</h3></a>
+												      <div class="entry-meta">
+															<h6 class="events"><i class="fa fa-clock-o"></i> October 15-16, 2016</h6>
+															<div class="icons">
+																<a href="#"><i class="fa fa-user"></i> Admin</a>
+																<a href="#"><i class="fa fa-comments-o"></i> 7k</a>
+																<a href="#"><i class="fa fa-thumbs-o-up"></i> 120k</a>
+																<a href="#"><i class="fa fa-thumbs-o-down"></i>  26</a>
+															</div>
+																<div class="clearfix"></div>
+															<p>Adele will be performing at the Verizon Center - DC at 601 F Streets NW, Washington, District Of Columbia. Next performance is on October 10, 2016, with the last performance scheduled on October 11, 2016. Doors typically open two hours before showtime - subject to change so please clarify before heading to the venue. </p>
+													  </div>
+												  </div>
+											</div>
+											
+
+										</div>
+										
+										<div class="music-right">
+											
+											  <div class="widget-side">
+												<h4 class="widget-title">Recent Events</h4>
+													<ul>
+														<li>
+															<a href="events.html">Oakland, CA - at Oracle Arena</a>
+															<span class="post-date">Sep 14, 2016</span>
+														</li>
+														<li>
+															<a href="events.html">Tacoma, WA - at Tacoma Dome</a>
+															<span class="post-date">Sep 16, 2016</span>
+														</li>
+														<li>
+															<a href="events.html">Vancouver, Canada - at Rogers Arena</a>
+															<span class="post-date">Sep 18, 2016</span>
+														</li>
+														<li>
+															<a href="events.html">Edmonton, Canada - at Rogers Place</a>
+															<span class="post-date">Sep 20, 2016</span>
+														</li>
+														<li>
+															<a href="events.html">San Jose, CA - at SAP Center</a>
+															<span class="post-date">Sep 25, 2016</span>
+														</li>
+													</ul>
+												 </div>
+												 <div class="widget-side second">
+												<h4 class="widget-title">Upcoming Events</h4>
+													<ul>
+														<li>
+															<div class="song-img">
+															  <a href="events.html"><img src="images/f1.png" class="img-responsive" alt="" /></a>
+															</div>
+															<div class="song-text">
+																<a href="events.html">Drake - Centre Bell
+1260 De La Gauchetiere Street, Montreal, Quebec</a>
+																<span class="post-date">Oct 07, 2016</span>
+															</div>
+															<div class="clearfix"></div>
+														</li>
+														<li>
+															<div class="song-img">
+															  <a href="events.html"><img src="images/f3.png" class="img-responsive" alt="" /></a>
+															</div>
+															<div class="song-text">
+																<a href="events.html">Adele - Verizon Center - DC
+601 F Streets NW, Washington, District Of Columbia</a>
+																<span class="post-date">Oct 11, 2016</span>
+															</div>
+															<div class="clearfix"></div>
+														</li>
+														<li>
+															<div class="song-img">
+															  <a href="events.html"><img src="images/f2.png" class="img-responsive" alt="" /></a>
+															</div>
+															<div class="song-text">
+																<a href="events.html">Beyonce - The Formation World Tour
+Nissan Stadium - Nashville, Nashville, TN</a>
+																<span class="post-date">Oct 02, 2016</span>
+															</div>
+															<div class="clearfix"></div>
+														</li>
+														<li>
+															<div class="song-img">
+															  <a href="events.html"><img src="images/f9.png" class="img-responsive" alt="" /></a>
+															</div>
+															<div class="song-text">
+																<a href="events.html">Taylor Swift - Circuit Of The Americas | 9201 Circuir Of The Americas BLVD, Austin , TX 78617</a>
+																<span class="post-date">Oct 10, 2016</span>
+															</div>
+															<div class="clearfix"></div>
+														</li>
+														
+													</ul>
+												 </div>
+                                                  <div class="widget-side second">
+												<h4 class="widget-title">Buy Tickets</h4>
+													<ul>
+														<li>
+                                                       
+									<div class="price-section">
+											<div class="pricing-inner">
+												<h3 class="hd-tittle">Register Now</h3>
+												<div class="pricing">
+													<div class="price-top">
+														<h3><span>G.A</span></h3>
+														<h4>Gen-Admission</h4>
+													</div>
+                                                    <div class="price-top">
+														<h4>GA 1 DAY TICKET</h4>
+													</div>
+                                                    <div class="price-top">
+														<h4>GA 2 DAYS TICKET</h4>
+													</div>
+                                                    <div class="price-top">
+														<h4>GA 3 DAYS TICKET</h4>
+                                                        
+													</div>
+                                                    <a href="events.html" class="price">register</a>
+												  
+												</div>
+												<div class="pricing two">
+													<div class="price-top">
+														<h3><span>VIP</span></h3>
+													</div>
+												 <div class="price-top">
+												<h4>VIP 1 DAY TICKET</h4>
+													</div>
+                                                    <div class="price-top">
+													<h4>VIP 2 DAYS TICKET</h4>
+													</div>
+                                                    <div class="price-top">
+													<h4>VIP 3 DAYS TICKET</h4>
+                                                    
+													</div>
+                                                    <a href="events.html" class="price">register</a>
+												</div>
+													<div class="clearfix"></div>
+                                                    <br></div><h3 class="hd-tittle">Ticket Registration for MusicWorld Festival 2016 is now open!<br></h3><h3 class="hd-tittle">The music you need to know now.<br></h3>
+									<div class="clearfix"> </div>
+									  </div>
+									
+										</div>
+										<div class="clearfix"></div>
+									
+								</div>
+							<div class="clearfix"></div>
+					
+					</div>
+			  
+   <div class="footer">
+				<div class="footer-grid">
+					<h3>Navigation</h3>
+					<ul class="list1">
+					  <li><a href="explorer.html">Home</a></li>
+					  <li><a href="albums.html">Artists/ Albums</a></li>
+					  <li><a href="genres.html">Genres</a></li>
+					  <li><a href="events.html">Events</a></li>
+					  
+					  <li><a href="contact.html">Contact</a></li>
+			      </ul>
+				</div>
+				<div class="footer-grid">
+					<h3>Our Account</h3>
+				    <ul class="list1">
+					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
+					  <li><a href="contact.html">Personal information</a></li>
+					  <li><a href="contact.html">Addresses</a></li>
+					  <li><a href="contact.html">Search Terms</a></li>
+				    </ul>
+				</div>
+				<div class="footer-grid">
+					<h3>Our Support</h3>
+					<ul class="list1">
+					  
+					  <li><a href="contact.html">Mobile</a></li>
+					  <li><a href="contact.html">Contact Us</a></li>
+					  <li><a href="contact.html">Addresses</a></li>
+				    </ul>
+				  </div>
+				   <div class="footer-grid">
+						<h3>Newsletter</h3>
+						<p class="footer_desc">Join over 10 million fellow music Listeners! Get newly released music straight to your inbox. Enter your email address below:</p>
+						<div class="search_footer">
+						 <form>
+						   <input type="text" placeholder="Email...." required>
+						  <input type="submit" value="Submit">
+						  </form>
+						</div>
+					 </div>
+					 <div class="footer-grid footer-grid_last">
+					   <h3>About Us</h3>
+									<p class="footer_desc">We are Music World. We provide music lovers with tens of millions of tracks to listen. When our music editors put together a playlist, they do more than find similar songs in a genre.</p>
+			<p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;50747548</p>
+						<p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">nextgeny1@gmail.com</a></span></p>	
+				   </div>
+					 <div class="clearfix"> </div>
+				</div>
+			</div>
+        
+			<footer>
+			   <p>&copy 2016 Music World. All Rights Reserved<a href="https://musicworld.com/" target="_blank"></a></p>
+			</footer>
+      
+   </section>
+  
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Music World</title>
+	<link rel="icon" href="assets/img/content/icon.png">
+	<link rel="stylesheet" href="assets/css/master.css">
+	<style type="text/css">
+	h1 {
+	font-size: 32px;
+}
+    a {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 7.6rem;
+	font-weight: bold;
+}
+    a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #66FFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 4.6rem;
+	font-family: "Comic Sans MS", cursive;
+}
+    body,td,th {
+	font-size: 4.6rem;
+	color: #FFFFFF;
+}
+    </style>
+</head>
+<body>
+	<div class="page-loader">
+		 <div class="vertical-align align-center">
+			  <img src="assets/loader/loader.gif" alt="" class="loader-img">
+		 </div>
+	</div>
+
+	<div class="main-music-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="mesh-main-player" class="jp-jplayer" data-audio-src="assets/audio/flute.mp3" data-title="See right through ft. Fiora" data-artist="Tensnake"></div>
+	<div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="mesh-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="mesh-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="mesh-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="mesh-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						
+						<button id="playlist-toggle" class="jplayerButton">
+                        <span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+                     
+						</button>
+				  </a>				    </div>
+					<div class="center-side">
+						<div class="mesh-current-time">
+						</div>
+						<div class="mesh-seek-bar">
+							<div class="mesh-play-bar">
+							</div>
+						</div>
+						<div class="mesh-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						<div class="mesh-thumbnail">
+							<img src="assets/img/albums/cover3.jpg" alt="">
+						</div>
+						<div class="mesh-title">
+						</div>
+						<div class="mesh-artist">
+						</div>
+					</div>
+			  </div>
+		  </div>
+	  </div>
+	</div>
+<div class="playlist-wrapper" id="playlist-wrapper">
+		<div class="jp-playlist container">
+			<div class="about-list clearfix">
+				<span class="about-name">NAME</span>
+				<span class="about-length">LENGTH</span>
+				
+			</div>
+			<div class="trak-item" data-audio="music/Adele/Hello.mp3" data-artist="Adele" data-thumbnail="assets/img/albums/cover1.jpg" data-id="trak-200">
+				<audio preload="metadata" src="music/Adele/Hello.mp3" title="Hello"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Hello - Adele
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+		 <div class="trak-item" data-audio="music/Drake/One Dance.mp3" data-artist="Drake" data-thumbnail="assets/img/albums/cover3.jpg" data-id="trak-201">
+				<audio preload="metadata" src="music/Drake/One Dance.mp3" title="One Dance"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+					
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							One Dance - Drake
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+	</div>
+	</div>
+
+	<div class="topHeader" >
+		<div class="header">
+			<div class="rightTopHeader">
+            <div class="logo-container-top">
+			<a href="explorer.html"><img src="assets/img/logo/explore.PNG" alt="Explore"></a>
+		</div>
+     <a href="explorer.html" class="open-menu">
+					<!-- Buttons Bars -->
+					<span class="span-1"></span>
+					<span class="span-2"></span>
+					<span class="span-3"></span>
+				</a>
+			</div>
+		</div>
+		<div class="">
+			<nav>
+				<div class="">
+					<span></span>
+					<span></span>
+				</div>
+			<div class="">
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div>
+		<div class="logo-container-top">
+			<a href="home.html"><img src="assets/img/logo/logo.PNG" alt="Music World"></a>
+		</div>
+	</div>
+	<section class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="breadcrumb-fullscreen-parent phone-menu-bg">
+					<div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('assets/img/starHomePage/star.jpg');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+						<div id="home" style="position: absolute;left: 0;top: 0;">
+							<div class="intro-header">
+								<div class="js-height-full star" style="height: 955px;">
+									<div class="star-pattern-1 js-height-full" style="height: 994px;"></div>
+									<div class="col-sm-12"> 
+										<div class="starTitle">
+											<h4>All the music you already have</h4>
+											<div class="grid__item">
+						                		<h1> 
+                                              <a class="link link-yaku" href="#">                           <span>M</span><span>U</span><span>S</span><span>I</span><span>C</span><span>W</span><span>O</span><span>R</span><span>L</span><span>D</span>					 													</a>                                                   										                                             </h1>
+						                	</div>
+											<h4>Discover something you'll love</h4>
+										</div>
+										<canvas class="cover" width="1920" height="955"></canvas>
+									</div>
+								</div>
+							</div>
+	   					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

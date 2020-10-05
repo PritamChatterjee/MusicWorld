@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Genres</title>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+>
+<link href="css/font-awesome.css" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+
+<script src="js/jquery-1.10.2.min.js"></script>
+
+</head> 
+   
+ <body class="sticky-header left-side-collapsed"  onload="initMap()">
+    <section>
+      
+		<div class="left-side sticky-left-side">
+
+		  <div class="logo">
+				<h1><a href="home.html">Music<span>World</span></a></h1>
+		  </div>
+			<div class="logo-icon text-center">
+				<a href="home.html">M </a>
+			</div>
+
+			<div class="left-side-inner">
+
+					<ul class="nav nav-pills nav-stacked custom-nav">
+						<li><a href="explorer.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+					<li><a href="albums.html"><i class="lnr lnr-users"></i> <span>Artists/ albums</span></a></li> 
+						<li><a href="genres.html"><i class="lnr lnr-music-note"></i> <span>Genres</span></a></li>
+                        <li><a href="events.html"><i class="lnr lnr-book"></i><span>Events</span></a></li>
+                        <li><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+							
+								 </li>
+							</ul>
+						</li>     
+					</ul>
+				
+			</div>
+		</div>
+		
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="sign-grids">
+								<div class="sign">
+									<div class="sign-left">
+										<ul>
+											<li><a class="fb" href="https://www.facebook.com"><i></i>Sign in with Facebook</a></li>
+											<li><a class="goog" href="https://accounts.google.com/login"><i></i>Sign in with Google</a></li>
+											<li><a class="linkin" href="https://twitter.com"><i></i>Sign in with Twitter</a></li>
+										</ul>
+									</div>
+									<div class="sign-right">
+										<form action="#" method="post">
+
+											<h3>Create your account </h3>
+										  <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+										  <input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required>
+										  <input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required>	
+										  <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>	
+										<input type="submit" value="CREATE ACCOUNT" >
+										</form>
+									</div>
+									<div class="clearfix"></div>								
+								</div>
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		<div class="main-content">
+			
+			<div class="header-section">
+			
+			<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+			
+				<div class="menu-right">
+					<div class="profile_details">		
+						  <div class="col-md-4 serch-part">
+								<div id="sb-search" class="sb-search">
+								   <form action="#" method="post">
+										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
+										<input class="sb-search-submit" type="submit" value="">
+										<span class="sb-icon-search"> </span>
+									</form>
+								</div>
+							</div>
+							  
+									<script src="js/classie.js"></script>
+									<script src="js/uisearch.js"></script>
+										<script>
+											new UISearch( document.getElementById( 'sb-search' ) );
+										</script>
+									
+											  <div class="col-md-4 player">
+													<div class="audio-player">
+														<audio id="audio-player"  controls="controls">
+														<source src="music/Drake/One Dance.mp3" type="audio/mpeg"></source>
+															
+														</div>
+												
+												<script type="text/javascript">
+													$(function(){
+													  $('#audio-player').mediaelementplayer({
+														alwaysShowControls: true,
+														features: ['playpause','progress','volume'],
+														audioVolume: 'horizontal',
+														iPadUseNativeControls: true,
+														iPhoneUseNativeControls: true,
+														AndroidUseNativeControls: true
+													});
+												 });
+												</script>
+												
+													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
+													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+										
+												<ul class="next-top">
+													<li><a class="ar" href="#"> <img src="images/arrow.png" alt=""/></a></li>
+													<li><a class="ar2" href="#"><img src="images/arrow2.png" alt=""/></i></a></li>
+														
+											 </ul>	
+											</div>
+											<div class="col-md-4 login-pop">
+												<div id="loginpop"><a href="#" id="loginButton"><span>Login <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-sign-in"></i></a>
+														<div id="loginBox"> 
+													<form action="#" method="post" id="loginForm">										
+																	<fieldset id="body">
+																		<fieldset>
+																			  <label for="email">Email Address</label>
+																			  <input type="text" name="email" id="email">
+																		</fieldset>
+																		<fieldset>
+																				<label for="password">Password</label>
+																				<input type="password" name="password" id="password">
+																		 </fieldset>
+																		<input type="submit" id="login" value="Sign in">
+																		<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+																	</fieldset>
+																<span><a href="#">Forgot your password?</a></span>
+														 </form>
+													</div>
+												</div>
+
+											</div>
+										<div class="clearfix"> </div>
+								</div>
+							
+						</div>
+					<div class="clearfix"></div>
+				</div>
+			
+			<div id="page-wrapper">
+				<div class="inner-content">
+				      <div class="music-browse">
+					
+							<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
+							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+							 <script>
+									$(document).ready(function() {
+									$('.popup-with-zoom-anim').magnificPopup({
+										type: 'inline',
+										fixedContentPos: false,
+										fixedBgPos: true,
+										overflowY: 'auto',
+										closeBtnInside: true,
+										preloader: false,
+										midClick: true,
+										removalDelay: 300,
+										mainClass: 'my-mfp-zoom-in'
+									});
+									});
+							</script>		
+					
+						<div class="browse">
+								<div class="tittle-head two">
+									<h3 class="tittle">Genres <span class="new">New</span></h3>
+									
+									<div class="clearfix"> </div>
+								</div>
+								<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+								  <ul id="myTab" class="nav nav-tabs" role="tablist">
+								  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">All</a></li>
+								   <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Hip Hop / R&B </a></li>
+
+								    <li role="presentation" class=""><a href="#a1" role="tab" id="a1-tab" data-toggle="tab" aria-controls="a1" aria-expanded="false">Country / Pop</a></li>
+                                    <li role="presentation" class=""><a href="#a2" role="tab" id="a2-tab" data-toggle="tab" aria-controls="a2" aria-expanded="false">Jazz/ Electronics</a></li>
+                                    
+                                    <li role="presentation" class=""><a href="#a3" role="tab" id="a3-tab" data-toggle="tab" aria-controls="a3" aria-expanded="false">Classic Blues/ Rock</a></li>
+                                    <li role="presentation" class=""><a href="instruments.html">Instruments</a></li>
+								</ul>
+								<div id="myTabContent" class="tab-content">
+								  <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+									<div class="browse-inner">
+								
+								
+									<div class="col-md-3 artist-grid">
+										<a  href="drake.html"><img src="images/abm2.jpg" title="Views"></a>
+										 <a href="drake.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="drake.html">Drake</a>
+										</div>
+									<div class="col-md-3 artist-grid">
+											<a  href="beyonce.html"><img src="images/v3.jpg" title="Lemonade"></a>
+											 <a href="beyonce.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="beyonce.html">Beyonce</a>
+										</div>
+									<div class="col-md-3 artist-grid">
+											<a  href="adele.html"><img src="images/abm1.jpg" title="25"></a>
+											 <a href="adele.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="adele.html">Adele</a>
+										</div>
+									<div class="col-md-3 artist-grid">
+											<a  href="Phillip Phillips.html"><img src="images/v11.PNG" title="Behind The Light"></a>
+											 <a href="Phillip Phillips.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="Phillip Phillips.html">Phillip Phillips</a>
+										</div>
+									<div class="col-md-3 artist-grid">
+											<a  href="Joey Alexander.html"><img src="images/v4.jpg" title="Countdown"></a>
+											 <a href="Joey Alexander.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="Joey Alexander.html">Joey Alexander</a>
+										</div>
+										<div class="col-md-3 artist-grid">
+											<a  href="Rihanna.html"><img src="images/v7.PNG" title="Anti"></a>
+											 <a href="Rihanna.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+											<a class="art" href="Rihanna.html">Rihanna</a>
+										</div>
+									<div class="col-md-3 artist-grid">
+											<a  href="Jason Aldean.html"><img src="images/v6.jpg" title="They Don't Know"></a>
+											 <a href="Jason Aldean.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="Jason Aldean.html">Jason Aldean</a>
+										</div>
+									<div class="col-md-3 artist-grid">
+											<a  href="Stewart Lindsey.html"><img src="images/v5.jpg" title="Spitballin'"></a>
+											 <a href="Stewart Lindsey.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+											<a class="art" href="Stewart Lindsey.html">Stewart Lindsey</a>
+										</div>
+											<div class="col-md-3 artist-grid">
+													<a  href="Stirling.html"><img src="images/v9.PNG" title="Brave Enough"></a>
+													 <a href="Stirling.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+														<a class="art" href="Stirling.html">Lindsey Stirling</a>
+												</div>
+											<div class="col-md-3 artist-grid">
+													<a  href="Beach Boys.html"><img src="images/v10.PNG" title="Smile"></a>
+													 <a href="Beach Boys.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+														<a class="art" href="single.html">Beach Boys</a>
+												</div>
+												<div class="col-md-3 artist-grid">
+													<a  href="Skrillex.html"><img src="images/v8.PNG" title="Recess"></a>
+													 <a href="Skrillex.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+														<a class="art" href="Skrillex.html">Skrillex</a>
+												</div>
+											<div class="col-md-3 artist-grid">
+												<a  href="Andrea Bocelli.html"><img src="images/v12.PNG" title="Cinema"></a>
+												 <a href="Andrea Bocelli.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+													<a class="art" href="Andrea Bocelli.html">Andrea Bocelli</a>
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+								  </div>
+								  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+									   <div class="browse-inner">
+								<div class="col-md-3 artist-grid">
+											<a  href="drake.html"><img src="images/abm2.jpg" title="Views"></a>
+										 <a href="drake.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="drake.html">Drake</a>
+										</div>
+									<div class="col-md-3 artist-grid">
+											<a  href="Rihanna.html"><img src="images/v7.PNG" title="Anti"></a>
+											 <a href="Rihanna.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+											<a class="art" href="Rihanna.html">Rihanna</a>
+										</div>
+										<div class="col-md-3 artist-grid">
+											<a  href="beyonce.html"><img src="images/v3.jpg" title="Lemonade"></a>
+											 <a href="beyonce.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="beyonce.html">Beyonce</a>
+							</div>
+									<div class="clearfix"> </div>
+								</div>
+								  </div>
+								 <div role="tabpanel" class="tab-pane fade active in" id="a1" aria-labelledby="a1-tab">
+									 <div class="browse-inner">
+								
+								<div class="col-md-3 artist-grid">
+												<a  href="adele.html"><img src="images/abm1.jpg" title="25"></a>
+											 <a href="adele.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="adele.html">Adele</a>
+											</div>
+										<div class="col-md-3 artist-grid">
+												<a  href="Phillip Phillips.html"><img src="images/v11.PNG" title="Behind The Light"></a>
+											 <a href="Phillip Phillips.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="Phillip Phillips.html">Phillip Phillips</a>
+													</div>
+                                                    <div class="col-md-3 artist-grid">
+														<a  href="Jason Aldean.html"><img src="images/v6.jpg" title="They Don't Know"></a>
+											 <a href="Jason Aldean.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="Jason Aldean.html">Jason Aldean</a>
+											</div>
+										
+														<div class="clearfix"> </div>
+													</div>
+								  </div>
+								   <div role="tabpanel" class="tab-pane fade" id="a2" aria-labelledby="a2-tab">
+									  <div class="browse-inner">
+								
+								
+										<div class="col-md-3 artist-grid">
+											<a  href="Joey Alexander.html"><img src="images/v4.jpg" title="Countdown"></a>
+											 <a href="Joey Alexander.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="Joey Alexander.html">Joey Alexander</a>
+											</div>
+										<div class="col-md-3 artist-grid">
+												<a  href="Skrillex.html"><img src="images/v8.PNG" title="Recess"></a>
+													 <a href="Skrillex.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+														<a class="art" href="Skrillex.html">Skrillex</a>
+											</div>
+										<div class="col-md-3 artist-grid">
+												<a  href="Stirling.html"><img src="images/v9.PNG" title="Brave Enough"></a>
+													 <a href="Stirling.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+														<a class="art" href="Stirling.html">Lindsey Stirling</a>
+											
+											</div>
+														<div class="clearfix"> </div>
+													</div>
+											</div>
+                                            <div role="tabpanel" class="tab-pane fade" id="a3" aria-labelledby="a3-tab">
+									  <div class="browse-inner">
+								
+								
+										<div class="col-md-3 artist-grid">
+											<a  href="Stewart Lindsey.html"><img src="images/v5.jpg" title="Spitballin'"></a>
+											 <a href="Stewart Lindsey.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+											<a class="art" href="Stewart Lindsey.html">Stewart Lindsey</a>
+											</div>
+										<div class="col-md-3 artist-grid">
+												<a  href="Beach Boys.html"><img src="images/v10.PNG" title="Smile"></a>
+													 <a href="Beach Boys.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+														<a class="art" href="single.html">Beach Boys</a>
+											</div>
+										<div class="col-md-3 artist-grid">
+												<a  href="Andrea Bocelli.html"><img src="images/v12.PNG" title="Cinema"></a>
+												 <a href="Andrea Bocelli.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+													<a class="art" href="Andrea Bocelli.html">Andrea Bocelli</a>
+											
+											</div>
+														<div class="clearfix"> </div>
+													</div>
+											</div>
+								</div>
+							</div>
+						
+						</div>
+					
+										</div>
+									</div>
+							
+							</div>
+					
+   <div class="footer">
+				<div class="footer-grid">
+					<h3>Navigation</h3>
+					<ul class="list1">
+					  <li><a href="explorer.html">Home</a></li>
+					  <li><a href="albums.html">Artists/ Albums</a></li>
+					  <li><a href="genres.html">Genres</a></li>
+					  <li><a href="events.html">Events</a></li>
+					  
+					  <li><a href="contact.html">Contact</a></li>
+			      </ul>
+				</div>
+				<div class="footer-grid">
+					<h3>Our Account</h3>
+				    <ul class="list1">
+					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
+					  <li><a href="contact.html">Personal information</a></li>
+					  <li><a href="contact.html">Addresses</a></li>
+					  <li><a href="contact.html">Search Terms</a></li>
+				    </ul>
+				</div>
+				<div class="footer-grid">
+					<h3>Our Support</h3>
+					<ul class="list1">
+					  
+					  <li><a href="contact.html">Mobile</a></li>
+					  <li><a href="contact.html">Contact Us</a></li>
+					  <li><a href="contact.html">Addresses</a></li>
+				    </ul>
+				  </div>
+				   <div class="footer-grid">
+						<h3>Newsletter</h3>
+						<p class="footer_desc">Join over 10 million fellow music Listeners! Get newly released music straight to your inbox. Enter your email address below:</p>
+						<div class="search_footer">
+						 <form>
+						   <input type="text" placeholder="Email...." required>
+						  <input type="submit" value="Submit">
+						  </form>
+						</div>
+					 </div>
+					 <div class="footer-grid footer-grid_last">
+					   <h3>About Us</h3>
+									<p class="footer_desc">We are Music World. We provide music lovers with tens of millions of tracks to listen. When our music editors put together a playlist, they do more than find similar songs in a genre.</p>
+			<p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;50747548</p>
+						<p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">nextgeny1@gmail.com</a></span></p>	
+				   </div>
+					 <div class="clearfix"> </div>
+				</div>
+			</div>
+        
+			<footer>
+			   <p>&copy 2016 Music World. All Rights Reserved<a href="https://musicworld.com/" target="_blank"></a></p>
+			</footer>
+    
+ </section>
+  
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

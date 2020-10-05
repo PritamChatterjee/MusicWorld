@@ -1,0 +1,689 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MusicWorld</title>
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<link href="css/font-awesome.css" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<style type="text/css">
+body,td,th {
+	font-family: Lato-Regular;
+}
+body {
+	background-color: #333333;
+}
+</style>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+
+<meta charset="utf-8">
+</head> 
+   
+ <body class="sticky-header left-side-collapsed"  onload="initMap()">
+ <section>
+      
+		<div class="left-side sticky-left-side">
+
+		  <div class="logo">
+				<h1><a href="home.html">Music<span>World</span></a></h1>
+		  </div>
+			<div class="logo-icon text-center">
+				<a href="home.html">M </a>
+			</div>
+
+			<div class="left-side-inner">
+
+					<ul class="nav nav-pills nav-stacked custom-nav">
+						<li><a href="explorer.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+					<li><a href="albums.html"><i class="lnr lnr-users"></i> <span>Artists/ albums</span></a></li> 
+						<li><a href="genres.html"><i class="lnr lnr-music-note"></i> <span>Genres</span></a></li>
+                        <li><a href="events.html"><i class="lnr lnr-book"></i><span>Events</span></a></li>
+                        <li><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+							
+								 </li>
+							</ul>
+						</li>     
+					</ul>
+				
+			</div>
+		</div>
+		
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="sign-grids">
+								<div class="sign">
+									<div class="sign-left">
+										<ul>
+											<li><a class="fb" href="https://www.facebook.com"><i></i>Sign in with Facebook</a></li>
+											<li><a class="goog" href="https://accounts.google.com/login"><i></i>Sign in with Google</a></li>
+											<li><a class="linkin" href="https://twitter.com"><i></i>Sign in with Twitter</a></li>
+										</ul>
+									</div>
+									<div class="sign-right">
+										<form action="#" method="post">
+
+											<h3>Create your account </h3>
+										  <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+										  <input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required>
+										  <input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required>	
+										  <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>	
+										<input type="submit" value="CREATE ACCOUNT" >
+										</form>
+									</div>
+									<div class="clearfix"></div>								
+								</div>
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		<div class="main-content">
+			
+			<div class="header-section">
+			
+			<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+		
+				<div class="menu-right">
+					<div class="profile_details">		
+						  <div class="col-md-4 serch-part">
+								<div id="sb-search" class="sb-search">
+									<form action="#" method="post">
+
+										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
+										<input class="sb-search-submit" type="submit" value="">
+										<span class="sb-icon-search"> </span>
+									</form>
+								</div>
+					  </div>
+							 
+									<script src="js/classie.js"></script>
+									<script src="js/uisearch.js"></script>
+										<script>
+											new UISearch( document.getElementById( 'sb-search' ) );
+										</script>
+									
+											  <div class="col-md-4 player">
+													<div class="audio-player">
+														<audio id="audio-player"  controls="controls">
+														<source src="music/Drake/One Dance.mp3" type="audio/mpeg"></source>
+														
+												</div>
+												
+												<script type="text/javascript">
+													$(function(){
+													  $('#audio-player').mediaelementplayer({
+														alwaysShowControls: true,
+														features: ['playpause','progress','volume'],
+														audioVolume: 'horizontal',
+														iPadUseNativeControls: true,
+														iPhoneUseNativeControls: true,
+														AndroidUseNativeControls: true
+													});
+												 });
+												</script>
+												
+													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
+													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+												
+												<ul class="next-top">
+													<li><a class="ar" href="#"> <img src="images/arrow.png" alt=""/></a></li>
+													<li><a class="ar2" href="#"><img src="images/arrow2.png" alt=""/></i></a></li>
+														
+											 </ul>	
+											</div>
+											<div class="col-md-4 login-pop">
+												<div id="loginpop"> <a href="#" id="loginButton"><span>Login <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-sign-in"></i></a>
+														<div id="loginBox">  
+												<form action="#" method="post" id="loginForm">
+																	<fieldset id="body">
+																		<fieldset>
+																			  <label for="email">Email Address</label>
+																			  <input type="text" name="email" id="email">
+																		</fieldset>
+																		<fieldset>
+																				<label for="password">Password</label>
+																				<input type="password" name="password" id="password">
+																	  </fieldset>
+																		<input type="submit" id="login" value="Sign in">
+																		<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+																	</fieldset>
+																<span><a href="https://www.google.com/accounts/recovery/forgotusername?hl=en">Forgot your password?</a></span>
+														 </form>
+												  </div>
+											  </div>
+
+											</div>
+										<div class="clearfix"> </div>
+				  </div>
+							
+			  </div>
+					<div class="clearfix"></div>
+		  </div>
+			
+			<div id="page-wrapper">
+				<div class="inner-content">
+				      <div class="music-left">
+					      
+							<div class="banner-section">
+								<div class="banner">
+									 <div class="callbacks_container">
+										<ul class="rslides callbacks callbacks1" id="slider4">
+											   	<li>
+														<div class="banner-img">
+															 <img src="images/11.jpg" class="img-responsive" alt="">
+												  </div>
+														<div class="banner-info">
+														  <h3>Lemonade</h3>
+																	  <p>Album by <span>Beyonce</span></p>
+												  </div>
+
+												</li>
+												<li>
+													<div class="banner-img">
+															 <img src="images/22.jpg" class="img-responsive" alt="">
+												  </div>
+														<div class="banner-info">
+														  <h3>Hello</h3>
+																	  <p>Album by <span>Adele</span></p>
+												  </div>
+
+
+												</li>
+												<li>
+												 <div class="banner-img">
+															 <img src="images/33.jpg" class="img-responsive" alt="">
+												  </div>
+														<div class="banner-info">
+														  <h3>Views</h3>
+																	  <p>Album by <span>Drake</span></p>
+												  </div>
+
+												
+												</li>
+									   </ul>
+								  </div>
+										
+									<script src="js/responsiveslides.min.js"></script>
+								 <script>
+									
+									$(function () {
+									  
+									  $("#slider4").responsiveSlides({
+										auto: true,
+										pager:true,
+										nav:true,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+										  $('.events').append("<li>before event fired.</li>");
+										},
+										after: function () {
+										  $('.events').append("<li>after event fired.</li>");
+										}
+									  });
+								
+									});
+								  </script>
+								<div class="clearfix"> </div>
+							</div>
+						</div>	
+				 
+							<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
+							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+							 <script>
+									$(document).ready(function() {
+									$('.popup-with-zoom-anim').magnificPopup({
+										type: 'inline',
+										fixedContentPos: false,
+										fixedBgPos: true,
+										overflowY: 'auto',
+										closeBtnInside: true,
+										preloader: false,
+										midClick: true,
+										removalDelay: 300,
+										mainClass: 'my-mfp-zoom-in'
+									});
+									});
+							</script>		
+					
+						<div class="albums">
+								<div class="tittle-head">
+								  <h3 class="tittle">New Releases <span class="new">new</span></h3>
+									<a href="index.html"></a>
+									<div class="clearfix"> </div>
+								</div>
+							<div class="col-md-3 content-grid">
+								<a href="drake.html"><img src="images/abm2.jpg" title="Drake"></a>
+
+								<a class="button play-icon" href="music/Drake/One Dance.mp3" download>Download now</a>
+							</div>
+							<div class="col-md-3 content-grid">
+								<a href="beyonce.html"><img src="images/abm3.jpg" title="Beyonce"></a>
+
+								<a class="button play-icon" href="music/Beyonce/Hold Up.mp3" download>Download now</a>
+							</div>
+							<div class="col-md-3 content-grid last-grid">
+							  <a href="adele.html"><img src="images/abm1.jpg" title="Adele"></a>
+
+							  <a class="button play-icon" href="music/Adele/Hello.mp3" download>Download now</a>
+							</div>
+							<div class="col-md-3 content-grid">
+							  <a href="Jason Aldean.html"><img src="images/abm4.jpg" title="Jason Aldean"></a>
+
+							  <a class="button play-icon" href="music/Jason Aldean/Lights Come On.mp3" download>Download now</a>
+							</div>
+							<div class="col-md-3 content-grid">
+							  <a href="Joey Alexander.html"><img src="images/abm5.jpg" title="Joey Alexander"></a>
+
+							  <a class="button play-icon" href="music/Joey Alexander/City Lights.mp3" download>Download now</a>
+							</div>
+							<div class="col-md-3 content-grid">
+								<a href="Stewart Lindsey.html"><img src="images/abm6.jpeg" title="Stewart Lindsey"></a>
+
+								<a class="button play-icon" href="music/Stewart Lindsey/Leave This Town.mp3" download>Download now</a>
+							</div>
+						  <div class="col-md-3 content-grid">
+								<a href="Rihanna.html"><img src="images/v7.PNG" title="Rihanna"></a>
+
+							<a class="button play-icon" href="music/Rihanna/Consideration.mp3" download>Download now</a>
+						  </div>
+                          <div class="col-md-3 content-grid last-grid">
+							<a href="Stirling.html"><img src="images/v9.PNG" title="Lindsey Stirling"></a>
+
+							<a class="button play-icon" href="music/Lindsey Stirling/Heist.mp3" download>Download now</a>
+						  </div>
+											<div class="clearfix"> </div>
+						</div>
+					
+						<div class="albums second">
+										<div class="tittle-head">
+										  <h3 class="tittle">Genres <span class="new">view</span></h3>
+											<a href="index.html"></a>
+											<div class="clearfix"> </div>
+										</div>
+											<div class="col-md-3 content-grid">
+												<a href="genres.html"><img src="images/HipHop.jpg" title="Hip-Hop / RnB"></a>
+												<div class="inner-info"><a href="genres.html"><h5>Hip-Hop / RnB</h5></a></div>
+											</div>
+											<div class="col-md-3 content-grid">
+													<a href="genres.html"><img src="images/Classical.jpg" title="Classical"></a>
+													<div class="inner-info"><a href="genres.html"><h5>Classical</h5></a></div>
+						  </div>
+											<div class="col-md-3 content-grid">
+													<a href="genres.html"><img src="images/Rock.jpg" title="Rock"></a>
+													<div class="inner-info"><a href="genres.html"><h5>Rock</h5></a></div>
+						  </div>
+											<div class="col-md-3 content-grid last-grid">
+													<a href="genres.html"><img src="images/Pop.jpg" title="Pop"></a>
+													<div class="inner-info"><a href="genres.html"><h5>Pop</h5></a></div>
+											</div>
+											<div class="col-md-3 content-grid">
+													<a href="genres.html"><img src="images/Jazz.jpg" title="Jazz"></a>
+											  <div class="inner-info"><a href="genres.html"><h5>Jazz</h5></a></div>
+											</div>
+											<div class="col-md-3 content-grid">
+												<a href="genres.html"><img src="images/Electronic.jpg" title="Electronic"></a>
+												<div class="inner-info"><a href="genres.html"><h5>Electronic</h5></a></div>
+											</div>
+											<div class="col-md-3 content-grid">
+													<a href="genres.html"><img src="images/Country.jpg" title="Country"></a>
+													<div class="inner-info"><a href="genres.html"><h5>Country</h5></a></div>
+											</div>
+											<div class="col-md-3 content-grid last-grid">
+													<a href="genres.html"><img src="images/Blues.jpg" title="Blues"></a>
+													<div class="inner-info"><a href="genres.html"><h5>Blues</h5></a></div>
+											</div>
+						  <div class="clearfix"> </div>
+						</div>
+								
+				  </div>
+                            
+                            <div class="tittle-head">
+							  <h3 class="tittle">&nbsp; Best of the year <span class="new"> 2016</span></h3>
+				  </div>
+                                
+						   <div class="music-right">
+								
+								 <div class="video-main">
+									<div class="video-record-list">
+										<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
+											<div class="jp-type-playlist">
+												<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px;"><img id="jp_poster_0" src="music/Beyonce/play1.png" style="width: 480px; height: 270px; display: inline;"><video id="jp_video_0" preload="metadata" title="1. Hold Up" style="width: 0px; height: 0px;"></video></div>
+												<div class="jp-gui">
+													<div class="jp-video-play" style="display: block;">
+														<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+													</div>
+													<div class="jp-interface">
+														<div class="jp-progress">
+															<div class="jp-seek-bar" style="width: 100%;">
+																<div class="jp-play-bar" style="width: 0%;"></div>
+															</div>
+														</div>
+														<div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+														<div class="jp-duration" role="timer" aria-label="duration">00:18</div>
+														<div class="jp-controls-holder">
+															<div class="jp-controls">
+																<button class="jp-previous" role="button" tabindex="0">previous</button>
+																<button class="jp-play" role="button" tabindex="0">play</button>
+															</div>
+															<div class="jp-volume-controls">
+																<button class="jp-mute" role="button" tabindex="0">mute</button>
+																<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+																<div class="jp-volume-bar">
+																	<div class="jp-volume-bar-value" style="width: 100%;"></div>
+																</div>
+															</div>
+															<div class="jp-toggles">
+															
+																<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+															</div>
+														</div>
+														<div class="jp-details" style="display: none;">
+															<div class="jp-title" aria-label="title">1. Hold Up</div>
+														</div>
+													</div>
+												</div>
+												<div class="jp-playlist">
+													<ul style="display: block;"><li class="jp-playlist-current"><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="0">1. Hold Up <span class="jp-artist">by Beyonce</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">2. Hello <span class="jp-artist">by Adele</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">3. One Dance <span class="jp-artist">by Drake</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">4. Lights Come On <span class="jp-artist">by Jason Aldean</span></a></div></li></ul>
+												</div>
+												<div class="jp-no-solution" style="display: none;">
+													<span>Update Required</span>
+													To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+				<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
+				<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+				<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+				<script type="text/javascript">
+				
+				$(document).ready(function(){
+
+					new jPlayerPlaylist({
+						jPlayer: "#jquery_jplayer_1",
+						cssSelectorAncestor: "#jp_container_1"
+					}, [
+						
+						{
+							title:"1. Hold Up",
+							artist:"Beyonce",
+							mp3: "music/Beyonce/Hold Up.mp3",
+							poster:"music/Beyonce/play1.png"
+						},
+						{
+							title:"2. Hello",
+							artist:"Adele",
+							mp3: "music/Adele/Hello.mp3",
+							poster:"music/Adele/play1.png"
+						},
+						{
+							title:"3. One Dance",
+							artist:"Drake",
+							mp3: "music/Drake/One Dance.mp3",
+							poster:"music/Drake/play1.png"
+						},
+						
+						{
+							title:"4. Lights Come On",
+							artist:"Jason Aldean",
+							mp3: "music/Jason Aldean/Lights Come On.mp3",
+							poster:"music/Jason Aldean/play1.png"
+						}
+					], {
+						swfPath: "../../dist/jplayer",
+						supplied: "webmv,ogv,mp3",
+						useStateClassSkin: true,
+						autoBlur: false,
+						smoothPlayBar: true,
+						keyEnabled: true
+					});
+
+				});
+				
+					</script>
+			
+									  <div class="apps">
+												<h3 class="hd-tittle">Finding your next obsession is our obsession</h3>
+												<div class="banner-button">
+													
+										</div>
+								  
+									<div class="price-section">
+											<div class="pricing-inner">
+												<h3 class="hd-tittle">Register Now</h3>
+												<div class="pricing">
+													<div class="price-top">
+														<h3><span>Free</span></h3>
+														<h4>Non-Registered</h4>
+													</div>
+												  <div class="price-bottom">
+														<ul>
+															
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">ads</a><div class="clearfix"></div></li>
+															
+														</ul>
+														
+													</div>
+												</div>
+												<div class="pricing two">
+													<div class="price-top">
+														<h3><span>Member</span></h3>
+														<h4>Registered</h4>
+													</div>
+												  <div class="price-bottom">
+													<ul>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download unlimited songs</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
+													  <li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">No ads</a><div class="clearfix"></div></li>
+                                                        
+															
+													  </ul>
+														
+												  </div>
+												</div>
+													<div class="clearfix"></div>
+                                                    <br></div><h3 class="hd-tittle"><a href="http://www.billboard.com/articles/columns/hip-hop/7518026/the-game-rap-beef-history-meek-mill-50-cent">An In-Depth History of The Game's Many Hip-Hop Beefs.<br>
+                                                    </a></h3><h3 class="hd-tittle"><a href="http://www.billboard.com/articles/columns/pop/7518019/the-weeknd-starboy-new-hair">The Weeknd Shares Upcoming Album Title & Cover Art, Flaunts New Haircut.<br>
+                                                    </a></h3><h3 class="hd-tittle"><a href="http://www.billboard.com/articles/columns/chart-beat/7518027/teenage-fanclub-here-rock-albums-chart">Alt Vets Teenage Fanclub Still Rocking Billboard Charts After 25 Years.<br>
+                                                    </a></h3>
+									<div class="clearfix"> </div>
+									  </div>
+												
+							 </div>
+				  </div>
+													 
+											<div class="clearfix"></div>
+			
+			  </div>
+						
+                        			
+		  </div>
+              <h3 class="tittle">Collections from top composers <span class="new"> new</span></h3>
+									<div class="clearfix"> </div>
+   </div>
+								 <ul id="flexiselDemo1">
+								<li>
+									<a href="adele.html"><img src="images/v1.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Adele </div>
+									<div class="date-city">
+										<h5>2015</h5>
+										<div class="buy-tickets">
+										  <a href="adele.html">25</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="drake.html"><img src="images/v2.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Drake</h4></div>
+									<div class="date-city">
+										<h5>2016</h5>
+										<div class="buy-tickets">
+										  <a href="drake.html">views</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="beyonce.html"><img src="images/v3.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Beyonce</h4></div>
+									<div class="date-city">
+										<h5>2016</h5>
+										<div class="buy-tickets">
+										  <a href="beyonce.html">Lemonade</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="Joey Alexander.html"><img src="images/v4.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Joey Alexander</h4></div>
+									<div class="date-city">
+										<h5>2016</h5>
+										<div class="buy-tickets">
+										  <a href="Joey Alexander.html">Countdown</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="Stewart Lindsey.html"><img src="images/v5.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Stewart Lindsey</h4></div>
+									<div class="date-city">
+										<h5>2012</h5>
+										<div class="buy-tickets">
+										  <a href="Stewart Lindsey.html">Spitballin'</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="Jason Aldean.html"><img src="images/v6.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Jason Aldean</h4></div>
+									<div class="date-city">
+										<h5>2016</h5>
+										<div class="buy-tickets">
+										  <a href="Jason Aldean.html">They Don't Know</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="Rihanna.html"><img src="images/v7.PNG" alt=""/></a>
+								  <div class="slide-title"><h4>Rihanna</h4></div>
+									<div class="date-city">
+										<h5>2016</h5>
+										<div class="buy-tickets">
+										  <a href="Rihanna.html">Anti</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<script type="text/javascript">
+						$(window).load(function() {
+							
+						  $("#flexiselDemo1").flexisel({
+								visibleItems: 5,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 3000,    		
+								pauseOnHover: false,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: { 
+									portrait: { 
+										changePoint:480,
+										visibleItems: 2
+									}, 
+									landscape: { 
+										changePoint:640,
+										visibleItems: 3
+									},
+									tablet: { 
+										changePoint:800,
+										visibleItems: 4
+									}
+								}
+							});
+							});
+						</script>
+						<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+	  </div>
+								</div>
+							<div class="clearfix"></div>
+						
+					</div>
+			 
+   <div class="footer">
+				<div class="footer-grid">
+					<h3>Navigation</h3>
+					<ul class="list1">
+					  <li><a href="explorer.html">Home</a></li>
+					  <li><a href="albums.html">Artists/ Albums</a></li>
+					  <li><a href="genres.html">Genres</a></li>
+					  <li><a href="events.html">Events</a></li>
+					  
+					  <li><a href="contact.html">Contact</a></li>
+			      </ul>
+				</div>
+				<div class="footer-grid">
+					<h3>Our Account</h3>
+				    <ul class="list1">
+					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
+					  <li><a href="contact.html">Personal information</a></li>
+					  <li><a href="contact.html">Addresses</a></li>
+					  <li><a href="contact.html">Search Terms</a></li>
+				    </ul>
+				</div>
+				<div class="footer-grid">
+					<h3>Our Support</h3>
+					<ul class="list1">
+					  
+					  <li><a href="contact.html">Mobile</a></li>
+					  <li><a href="contact.html">Contact Us</a></li>
+					  <li><a href="contact.html">Addresses</a></li>
+				    </ul>
+				  </div>
+				   <div class="footer-grid">
+						<h3>Newsletter</h3>
+						<p class="footer_desc">Join over 10 million fellow music Listeners! Get newly released music straight to your inbox. Enter your email address below:</p>
+						<div class="search_footer">
+						 <form>
+						   <input type="text" placeholder="Email...." required>
+						  <input type="submit" value="Submit">
+						  </form>
+						</div>
+					 </div>
+					 <div class="footer-grid footer-grid_last">
+					   <h3>About Us</h3>
+									<p class="footer_desc">We are Music World. We provide music lovers with tens of millions of tracks to listen. When our music editors put together a playlist, they do more than find similar songs in a genre.</p>
+			<p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;50747548</p>
+						<p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">nextgeny1@gmail.com</a></span></p>	
+				   </div>
+					 <div class="clearfix"> </div>
+				</div>
+			</div>
+        
+			<footer>
+			   <p>&copy 2016 Music World. All Rights Reserved<a href="https://musicworld.com/" target="_blank"></a></p>
+			</footer>
+        
+ </section>
+  
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

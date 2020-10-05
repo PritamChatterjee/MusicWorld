@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MusicWorld | Joey Alexander</title>
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<script src="js/jquery-1.10.2.min.js"></script>
+</head> 
+ <body class="sticky-header left-side-collapsed"  onload="initMap()">
+ <section>
+      <!-- left side start-->
+		<div class="left-side sticky-left-side">
+
+			<!--logo and iconic logo start-->
+		  <div class="logo">
+				<h1><a href="home.html">Music<span>World</span></a></h1>
+		  </div>
+			<div class="logo-icon text-center">
+				<a href="home.html">M </a>
+			</div>
+
+			<!--logo and iconic logo end-->
+			<div class="left-side-inner">
+
+				<!--sidebar nav start-->
+					<ul class="nav nav-pills nav-stacked custom-nav">
+						<li><a href="explorer.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+					<li><a href="albums.html"><i class="lnr lnr-users"></i> <span>Artists/ albums</span></a></li> 
+						<li><a href="genres.html"><i class="lnr lnr-music-note"></i> <span>Genres</span></a></li>
+                        <li><a href="events.html"><i class="lnr lnr-book"></i><span>Events</span></a></li>
+                        <li><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+							
+								 </li>
+							</ul>
+						</li>     
+					</ul>
+				<!--sidebar nav end-->
+			</div>
+		</div>
+		<!-- left side end-->
+				
+		<!-- signup -->
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="sign-grids">
+								<div class="sign">
+									<div class="sign-left">
+										<ul>
+											<li><a class="fb" href="https://www.facebook.com"><i></i>Sign in with Facebook</a></li>
+											<li><a class="goog" href="https://accounts.google.com/login"><i></i>Sign in with Google</a></li>
+											<li><a class="linkin" href="https://twitter.com"><i></i>Sign in with Twitter</a></li>
+										</ul>
+									</div>
+									<div class="sign-right">
+										<form action="#" method="post">
+
+											<h3>Create your account </h3>
+										  <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+										  <input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required>
+										  <input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required>	
+										  <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>	
+											
+											<input type="submit" value="CREATE ACCOUNT" >
+										</form>
+									</div>
+									<div class="clearfix"></div>								
+								</div>
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //signup -->
+
+		<!-- main content start-->
+		<div class="main-content">
+			<!-- header-starts -->
+			<div class="header-section">
+			<!--toggle button start-->
+			<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+			<!--toggle button end-->
+			<!--notification menu start -->
+				<div class="menu-right">
+					<div class="profile_details">		
+						  <div class="col-md-4 serch-part">
+								<div id="sb-search" class="sb-search">
+									<form action="#" method="post">
+										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
+										<input class="sb-search-submit" type="submit" value="">
+										<span class="sb-icon-search"> </span>
+									</form>
+								</div>
+							</div>
+							  <!-- search-scripts -->
+									<script src="js/classie.js"></script>
+									<script src="js/uisearch.js"></script>
+										<script>
+											new UISearch( document.getElementById( 'sb-search' ) );
+										</script>
+									<!-- //search-scripts -->
+											 <!---->
+											  <div class="col-md-4 player">
+													<div class="audio-player">
+														<audio id="audio-player"  controls="controls">
+																<source src="music/Joey Alexander/City Lights.mp3" type="audio/mpeg"></source>
+																
+														</div>
+												<!---->
+												<script type="text/javascript">
+													$(function(){
+													  $('#audio-player').mediaelementplayer({
+														alwaysShowControls: true,
+														features: ['playpause','progress','volume'],
+														audioVolume: 'horizontal',
+														iPadUseNativeControls: true,
+														iPhoneUseNativeControls: true,
+														AndroidUseNativeControls: true
+													});
+												 });
+												</script>
+												<!--audio-->
+													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
+													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+													<!---->
+
+
+												<!--//-->
+												<ul class="next-top">
+													<li><a class="ar" href="#"> <img src="images/arrow.png" alt=""/></a></li>
+													<li><a class="ar2" href="#"><img src="images/arrow2.png" alt=""/></i></a></li>
+														
+											 </ul>	
+											</div>
+											<div class="col-md-4 login-pop">
+												<div id="loginpop"><a href="#" id="loginButton"><span>Login <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-sign-in"></i></a>
+														<div id="loginBox">                
+															<form action="#" method="post" id="loginForm">
+																	<fieldset id="body">
+																		<fieldset>
+																			  <label for="email">Email Address</label>
+																			  <input type="text" name="email" id="email">
+																		</fieldset>
+																		<fieldset>
+																				<label for="password">Password</label>
+																				<input type="password" name="password" id="password">
+																		 </fieldset>
+																		<input type="submit" id="login" value="Sign in">
+																		<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+																	</fieldset>
+																<span><a href="#">Forgot your password?</a></span>
+														 </form>
+													</div>
+												</div>
+
+											</div>
+										<div class="clearfix"> </div>
+								</div>
+							<!-------->
+						</div>
+					<div class="clearfix"></div>
+				</div>
+			<!--notification menu end -->
+			<!-- //header-ends -->
+
+		<!-- //header-ends -->
+			<div id="page-wrapper">
+				
+				<div class="inner-content single">
+						    <!--/music-right-->
+						<div class="tittle-head">
+									<h3 class="tittle">Joey Alexander <span class="new">album - Countdown</span></h3>
+									<div class="clearfix"> </div>
+								</div>
+						   <div class="single_left">
+								<!--/video-main-->
+								 <div class="video-main">
+									<div class="video-record-list">
+										<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
+											<div class="jp-type-playlist">
+												<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px;"><img id="jp_poster_0" src="music/Joey Alexander/play1.png" style="width: 480px; height: 270px; display: inline;"><video id="jp_video_0" preload="metadata" src="http://audio/Joey.mp3" title="1. City Lights" style="width: 0px; height: 0px;"></video></div>
+												<div class="jp-gui">
+													<div class="jp-video-play" style="display: block;">
+														<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+													</div>
+													<div class="jp-interface">
+														<div class="jp-progress">
+															<div class="jp-seek-bar" style="width: 100%;">
+																<div class="jp-play-bar" style="width: 0%;"></div>
+															</div>
+														</div>
+														<div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+														<div class="jp-duration" role="timer" aria-label="duration">00:18</div>
+														<div class="jp-controls-holder">
+															<div class="jp-controls">
+																<button class="jp-previous" role="button" tabindex="0">previous</button>
+																<button class="jp-play" role="button" tabindex="0">play</button>
+															</div>
+															<div class="jp-volume-controls">
+																<button class="jp-mute" role="button" tabindex="0">mute</button>
+																<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+																<div class="jp-volume-bar">
+																	<div class="jp-volume-bar-value" style="width: 100%;"></div>
+																</div>
+															</div>
+															<div class="jp-toggles">
+															
+																<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+															</div>
+														</div>
+														<div class="jp-details" style="display: none;">
+															<div class="jp-title" aria-label="title">1. Joey</div>
+														</div>
+													</div>
+												</div>
+												<div class="jp-playlist">
+													<ul style="display: block;"><li class="jp-playlist-current"><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="0">1. City Lights <span class="jp-artist">by Joey Alexander</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">2. Giant Steps <span class="jp-artist">by Joey Alexander</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">3. Sunday Waltz <span class="jp-artist">by Joey Alexander/span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0"></a></div></li></ul>
+												</div>
+												<div class="jp-no-solution" style="display: none;">
+													<span>Update Required</span>
+													To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- script for play-list -->
+				<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
+				<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+				<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+				<script type="text/javascript">
+				//<![CDATA[
+				$(document).ready(function(){
+
+					new jPlayerPlaylist({
+						jPlayer: "#jquery_jplayer_1",
+						cssSelectorAncestor: "#jp_container_1"
+					}, [
+						
+						{
+							title:"1. City Lights",
+							artist:"",
+							mp3: "music/Joey Alexander/City Lights.mp3",
+							poster:"music/Joey Alexander/play1.png"
+						},
+						{
+							title:"2. Giant Steps",
+							artist:"",
+							mp3: "music/Joey Alexander/City Lights.mp3",
+							poster:"music/Joey Alexander/play2.png"
+						},
+						{
+							title:"3. Sunday Waltz",
+							artist:"",
+							mp3: "music/Joey Alexander/City Lights.mp3",
+							poster:"music/Joey Alexander/play3.png"
+						}						
+					], {
+						swfPath: "../../dist/jplayer",
+						supplied: "webmv,ogv,mp3",
+						useStateClassSkin: true,
+						autoBlur: false,
+						smoothPlayBar: true,
+						keyEnabled: true
+					});
+
+				});
+				//]]>
+					</script>
+			<!-- //script for play-list -->
+						<!--//video-main-->
+				</div>
+				<div class="response">
+                <h4>Bio</h4>
+                <h5>Pianist Joey Alexander is an extremely gifted jazz musician who first came to the public's attention as a prodigy before the age of ten. Born Josiah Alexander Sila in Denpasar, Bali, Indonesia in 2003, Alexander was introduced to music by his father, an amateur musician and jazz aficionado. By age six, Alexander had taught himself how to play piano by listening to albums by Louis Armstrong, Thelonious Monk, Bill Evans, and others. Without formal training, and initially only playing on a small keyboard his father had given him, Alexander achieved a high degree of proficiency. By age eight, he was jamming with local professionals, and in 2012 had the opportunity to play for Herbie Hancock who was visiting Jakarta, Indonesia as a UNESCO Goodwill Ambassador.</h5>
+                
+                <h4>Album details</h4>
+                
+                 <h5>Countdown" is a song by Joey Alexander, released in 2016. Written by Joey Alexander, it was the first single from the band's third studio album which was also named Countdown. The song reached No. 1 in 25 countries, including the United Kingdom, and was certified gold in the United Kingdom in 1986. In the United States the song peaked at No. 8 on the Billboard Hot 100 and at No. 18 on the Billboard Album Rock Tracks chart.</h5>
+                 
+					<h4>Reviews</h4>
+					
+					<div class="media response-info">
+						<div class="media-left response-text-left">
+							<a href="#">
+								<img class="media-object" src="images/c4.jpg" alt="">
+							</a>
+							<h5><a href="#">Williams</a></h5>
+						</div>
+						<div class="media-body response-text-right">
+							<p>I can't stop listening to city lights.</p>
+							<ul>
+								<li>Sep 09, 2016</li>
+								<li><a href="Joey Alexander.html">Reply</a></li>
+							</ul>
+							<div class="media response-info">
+								<div class="media-left response-text-left">
+									<a href="#">
+										<img class="media-object" src="images/c4.jpg" alt="">
+									</a>
+									<h5><a href="#">Zakaria</a></h5>
+								</div>
+								<div class="media-body response-text-right">
+									<p>This is very awesome.</p>
+									<ul>
+										<li>Sep 15, 2016</li>
+										<li><a href="Joey Alexander.html">Reply</a></li>
+									</ul>		
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="media response-info">
+						<div class="media-left response-text-left">
+							<a href="#">
+								<img class="media-object" src="images/c4.jpg" alt="">
+							</a>
+							<h5><a href="#">Abdulrah</a></h5>
+						</div>
+						<div class="media-body response-text-right">
+							<p>This boy taking over the game.</p>
+							<ul>
+								<li>Sep 20, 2016</li>
+								<li><a href="Joey Alexander.html">Reply</a></li>
+							</ul>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+						<!--//music-right-->
+						<div class="coment-form">
+					<h4>Leave your comment</h4>
+					<form action="#" method="post">
+						<input type="text" value="Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+						<input type="email" value="Email " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email ';}" required>
+						
+						<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Comment...';}" required>Your Comment...</textarea>
+						<input type="submit" value="Submit Comment">
+					</form>
+				</div>
+			</div>
+						
+
+					</div>
+			  <!--body wrapper end-->
+   <div class="footer">
+				<div class="footer-grid">
+					<h3>Navigation</h3>
+					<ul class="list1">
+					  <li><a href="explorer.html">Home</a></li>
+					  <li><a href="albums.html">Artists/ Albums</a></li>
+					  <li><a href="genres.html">Genres</a></li>
+					  <li><a href="events.html">Events</a></li>
+					  
+					  <li><a href="contact.html">Contact</a></li>
+			      </ul>
+				</div>
+				<div class="footer-grid">
+					<h3>Our Account</h3>
+				    <ul class="list1">
+					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
+					  <li><a href="contact.html">Personal information</a></li>
+					  <li><a href="contact.html">Addresses</a></li>
+					  <li><a href="contact.html">Search Terms</a></li>
+				    </ul>
+				</div>
+				<div class="footer-grid">
+					<h3>Our Support</h3>
+					<ul class="list1">
+					  
+					  <li><a href="contact.html">Mobile</a></li>
+					  <li><a href="contact.html">Contact Us</a></li>
+					  <li><a href="contact.html">Addresses</a></li>
+				    </ul>
+				  </div>
+				   <div class="footer-grid">
+						<h3>Newsletter</h3>
+						<p class="footer_desc">Join over 10 million fellow music Listeners! Get newly released music straight to your inbox. Enter your email address below:</p>
+						<div class="search_footer">
+						 <form>
+						   <input type="text" placeholder="Email...." required>
+						  <input type="submit" value="Submit">
+						  </form>
+						</div>
+					 </div>
+					 <div class="footer-grid footer-grid_last">
+					   <h3>About Us</h3>
+									<p class="footer_desc">We are Music World. We provide music lovers with tens of millions of tracks to listen. When our music editors put together a playlist, they do more than find similar songs in a genre.</p>
+			<p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;50747548</p>
+						<p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">nextgeny1@gmail.com</a></span></p>	
+				   </div>
+					 <div class="clearfix"> </div>
+				</div>
+			</div>
+        <!--footer section start-->
+			<footer>
+			   <p>&copy 2016 Music World. All Rights Reserved<a href="https://musicworld.com/" target="_blank"></a></p>
+			</footer>
+        <!--footer section end-->
+
+      <!-- main content end-->
+   </section>
+  
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
